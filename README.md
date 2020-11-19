@@ -16,7 +16,7 @@ When building an application that uses the Python SDK for Data Lake Analytics (A
 
 There are two fundamental ways to have your application sign-in:
 * **Interactive** - Use this method when your application has a user directly using your application and your app needs to perform operations in the context of that user.
-* **Non-interactive** - Thus this method when your application is not meant to interact with ADLA as a specific user. This is useful for long-running services.
+* **Non-interactive** - Use this method when your application is not meant to interact with ADLA as a specific user. This is useful for long-running services.
 
 ## Required Python packages
 
@@ -79,7 +79,7 @@ There are two ways to use interactive login:
 * **Interactive Pop-up** - The device the user is using will see a prompt appear and will use that prompt. This document does not cover this case yet.
 * **Interactive Device code** - The device the user is using will NOT see a prompt. This is useful in those cases when, for example, it is not possible to show a prompt. 
 
-### Authenticate interactively with a device code
+### Authenticate interactively with a browser popup
 
 This option is used when you want to have a browser popup appear when the user signs in to your application, showing an AAD login form. From this interactive popup, your application will receive the tokens necessary to use the Data Lake Analytics Python SDK on behalf of the user.
 
